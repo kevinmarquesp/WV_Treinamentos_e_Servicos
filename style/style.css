@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ccccccff;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#navbar-open, button, input {
+  cursor: pointer;
+}
+
+.red {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  width: 100vw;
+}
+
+header .container {
+  padding: 5px 10px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container #desk-logo, header .container #desk-button-contact {
+  display: none;
+}
+
+header .container img#mobile-logo {
+  height: 30px;
+}
+
+header .container nav {
+  background-color: #151927ff;
+  width: 256px;
+  height: 100%;
+  position: fixed;
+  right: -100%;
+  top: 0;
+}
+
+header .container nav #navbar-close {
+  height: 40px;
+  width: 100%;
+  padding-right: 10px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container nav ul {
+  list-style: none;
+}
+
+header .container nav ul li {
+  text-align: center;
+}
+
+header .container nav ul li a {
+  line-height: 50px;
+  color: white;
+}
+
+header .container nav ul li:hover {
+  background-color: #0000003a;
+}
+
+header .container nav ul li:hover a {
+  color: #ff1b0bff;
+}
+
+section.hero .container {
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 30px;
+  min-height: 300px;
+  height: 70vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.hero .container h1 {
+  color: white;
+  font-size: 1.7em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1080px;
+  }
+  header {
+    max-width: 1060px;
+  }
+  header .container #mobile-logo, header .container #navbar-open {
+    display: none;
+  }
+  header .container nav {
+    position: relative !important;
+    right: unset !important;
+    top: auto !important;
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
+    padding: 5px 20px;
+  }
+  header .container nav #desk-logo, header .container nav #desk-button-contact {
+    display: block;
+  }
+  header .container nav #navbar-close, header .container nav #contact-item {
+    display: none;
+  }
+  header .container nav img {
+    height: 25px;
+  }
+  header .container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 25px;
+  }
+  header .container nav ul li a {
+    line-height: 1em;
+  }
+  header .container nav ul li:hover {
+    background: none;
+  }
+  header .container nav #desk-button-contact {
+    background: none;
+    border: solid #ff1b0bff 1px;
+    border-radius: 100px;
+    padding: 5px 15px;
+  }
+  header .container nav #desk-button-contact a {
+    color: #ff1b0bff;
+    text-transform: uppercase;
+  }
+  header .container nav #desk-button-contact:hover {
+    background-color: #ff1b0bff;
+  }
+  header .container nav #desk-button-contact:hover a {
+    color: white;
+  }
+  section.hero .container {
+    padding: 0 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
