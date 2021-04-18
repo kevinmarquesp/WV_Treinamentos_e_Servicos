@@ -3,11 +3,10 @@ $blue: #151927ff;
 $gray: #ccccccff;
 
 * { margin: 0; padding: 0;
-    box-sizing: border-box;
-    transition: 200ms; }
+    box-sizing: border-box; }
 body { font-family: sans-serif;
-    background-color: $gray;}
-main { display: flex; justify-content: center; }
+    background-color: $blue;
+    display: flex; justify-content: center; }
 
 #navbar-open, button, input
 { cursor: pointer; }
@@ -20,7 +19,7 @@ a { text-decoration: none; }
 
 header {
     position: absolute;
-    width: 100vw;
+    width: 100%;
 
     .container {
         padding: 5px 10px;
@@ -40,6 +39,7 @@ header {
 
             position: fixed;
             right: -100%; top: 0;
+            transition: 200ms;
 
             #navbar-close {
                 height: 40px; width: 100%;
@@ -54,9 +54,11 @@ header {
                 list-style: none;
                 li {
                     text-align: center;
+                    transition: 500ms;
                     a {
                         line-height: 50px;
-                        color: white;    
+                        color: white;
+                        transition: 500ms;
                     }
                     &:hover {
                         background-color: #0000003a;
@@ -88,6 +90,40 @@ section.hero {
             color: white;
             font-size: 1.7em;
             text-transform: uppercase;
+        }
+    }
+}
+
+section.servicos {
+    .container {
+        position: relative;
+        background-color: white;
+        padding: 3rem 2rem;
+
+        h2 {
+            position: absolute;
+            right: 0; top: 0;
+
+            width: 100%;
+            text-align: center;
+
+            color: $gray;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        .conteudo-texto {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            div {
+                flex-basis: 100%;
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: .5rem;
+                }
+            }
         }
     }
 }
@@ -137,6 +173,7 @@ section.hero {
                     border: solid $red 1px;
                     border-radius: 100px;
                     padding: 5px 15px;
+                    transition: 500ms;
 
                     a {
                         color: $red;
@@ -155,6 +192,14 @@ section.hero {
     section.hero {
         .container {
             padding: 0 100px;
+        }
+    }
+
+    section.servicos {
+        .container {
+            .conteudo-texto {
+                flex-direction: row;
+            }
         }
     }
 }
