@@ -1,4 +1,7 @@
-* {
+@charset "UTF-8";
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -116,6 +119,7 @@ section.hero .container {
   padding: 0 30px;
   min-height: 300px;
   height: 70vh;
+  max-height: 720px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,7 +134,7 @@ section.hero .container {
 
 section.hero .container h1 {
   color: white;
-  font-size: 1.7em;
+  font-size: 1.3em;
   text-transform: uppercase;
 }
 
@@ -217,6 +221,49 @@ section.portifolio .container .galeria img {
   width: 100%;
 }
 
+section.linha-de-vida .container {
+  background-color: white;
+  padding: 3rem;
+  text-align: center;
+  color: #151927ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+section.linha-de-vida .container div h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+section.linha-de-vida .container div h3 {
+  font-weight: normal;
+}
+
+section.linha-de-vida .container div p {
+  font-size: .8rem;
+}
+
+section.linha-de-vida .container img {
+  width: 100%;
+  border: #151927ff solid 10px;
+  -webkit-box-shadow: #151927ff 10px 10px;
+          box-shadow: #151927ff 10px 10px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+section.linha-de-vida .container img:hover {
+  margin: -10px 10px 10px -10px;
+  -webkit-box-shadow: 30px 30px;
+          box-shadow: 30px 30px;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1080px;
@@ -286,6 +333,22 @@ section.portifolio .container .galeria img {
   section.hero .container {
     padding: 0 100px;
   }
+  section.hero .container h1 {
+    font-size: 1.7em;
+  }
+  section.servicos .container::after {
+    content: "Serviços";
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+    color: #ccccccff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  section.servicos .container h2 {
+    display: none;
+  }
   section.servicos .container .conteudo-texto {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -329,6 +392,36 @@ section.portifolio .container .galeria img {
   section.portifolio .container .texto {
     text-align: left;
     gap: 30px;
+  }
+  section.linha-de-vida .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: right;
+  }
+  section.linha-de-vida .container div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.4rem;
+  }
+  section.linha-de-vida .container img {
+    width: 100%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 /*# sourceMappingURL=style.css.map */
