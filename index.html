@@ -25,20 +25,20 @@
                         </span>
                         <ul id="main-nav">
                             <li>
-                                <a href="">Serviços</a>
+                                <a href="#servicos">Serviços</a>
                             </li>
                             <li>
-                                <a href="">Portifólio</a>
+                                <a href="#portifolio">Portifólio</a>
                             </li>
                             <li>
-                                <a href="">Linha de vida</a>
+                                <a href="#linhaDeVida">Linha de vida</a>
                             </li>
                             <li id="contact-item">
-                                <a href="">Contato</a>
+                                <a href="#contato">Contato</a>
                             </li>
                         </ul>
                         <button id="desk-button-contact">
-                            <a href="">Contato</a>
+                            <a href="#contato">Contato</a>
                         </button>
                     </nav>
                 </div>
@@ -52,7 +52,7 @@
                 </div>
             </section>
 
-            <section class="servicos">
+            <section class="servicos" id="servicos">
                 <div class="container">
                     <h2>Serviços</h2>
                     <div class="conteudo-texto">
@@ -78,7 +78,7 @@
                 </div>
             </section>
 
-            <section class="portifolio">
+            <section class="portifolio" id="portifolio">
                 <div class="container">
                     <div class="texto">
                         <h2>Mais um trabalho em andamento:</h2>
@@ -94,7 +94,7 @@
                 </div>
             </section>
 
-            <section class="linha-de-vida">
+            <section class="linha-de-vida" id="linhaDeVida">
                 <div class="container">
                     <div>
                         <h2>Linha de vida</h2>
@@ -105,7 +105,7 @@
                 </div>
             </section>
 
-            <section class="contato">
+            <section class="contato" id="contato">
                 <div class="container">
                     <div class="formulario-back">
                         <div class="formulario">
@@ -114,10 +114,10 @@
                             <p>Fone: (12) 3341-2110</p>
                             <form action="">
                                 <div>
-                                    <input type="text" placeholder="Nome" name="nome" id="nome">
+                                    <input type="text" placeholder="Nome" name="nome" id="nome" required>
                                     <input type="tel" placeholder="Telefone" name="numero" id="numero">
                                 </div>
-                                <input type="email" placeholder="Email" name="emailContato" id="emailContato">
+                                <input type="email" placeholder="Email" name="emailContato" id="emailContato" required>
                                 <input type="text" placeholder="Endereço" name="endereco" id="endereco">
                                 <input type="text" placeholder="Assunto" name="assunto" id="assunto">
                                 <textarea name="mensagem" placeholder="Mensagem" id="mensagem"></textarea>
@@ -130,6 +130,37 @@
                     </div>
                 </div>
             </section>
+
+            <footer>
+                <div class="container">
+                    <div class="formulario-inscricao">
+                        <h2>Formulário de inscrição</h2>
+                        <form action="">
+                            <input type="email" name="emailInscricao" id="emailInscricao" placeholder="Email" required>
+                            <input type="submit" value="Enviar" id="enviarInscricao">
+                        </form>
+                    </div>
+                    <div class="contatos">
+                        <ul class="list-one">
+                            <li>comercial2@wvtreinamentos.com.br</li>
+                            <li>Fone: (12) 3341-2110</li>
+                            <li>Whatsapp : (12) 98276-6825</li>
+                        </ul>
+                        <p>Avenida Cesário de Araújo, 331 - Chácaras Araújo 2, São José dos Campos - SP, 12225-131, Brazil</p>
+                        <ul class="list-two">
+                            <li>
+                                <a href="https://www.google.com/maps?cid=13064472363360341059" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC9SX1icMbN1pCbdB4fnhEjg" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/recover/initiate?lwv=110&amp;ars=royal_blue_bar" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </main>
 
         <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>

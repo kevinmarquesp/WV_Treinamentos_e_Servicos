@@ -360,6 +360,70 @@ section.contato .container .localizacao iframe {
   height: 100%;
 }
 
+footer .container {
+  background-color: black;
+  color: white;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+footer .container .formulario-inscricao {
+  text-align: center;
+  max-width: 300px;
+  min-width: 300px;
+  width: 300px;
+}
+
+footer .container .formulario-inscricao h2 {
+  font-size: 1.3rem;
+}
+
+footer .container .formulario-inscricao input#emailInscricao {
+  margin: 10px 0 20px 0;
+  border-color: white;
+  color: white;
+}
+
+footer .container .formulario-inscricao input#enviarInscricao {
+  background-color: white;
+  color: black;
+}
+
+footer .container .contatos {
+  font-size: .9rem;
+}
+
+footer .container .contatos ul {
+  list-style: none;
+}
+
+footer .container .contatos p {
+  margin: 20px 0;
+  font-style: italic;
+}
+
+footer .container .contatos ul.list-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+footer .container .contatos ul.list-two li a {
+  color: white;
+  font-size: 1.3rem;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1080px;
@@ -527,6 +591,16 @@ section.contato .container .localizacao iframe {
   section.contato .container .localizacao {
     width: 100%;
     height: auto;
+  }
+  footer .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
+  footer .container .contatos {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

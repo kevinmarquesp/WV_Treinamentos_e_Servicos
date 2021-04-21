@@ -269,6 +269,57 @@ section.contato {
     }
 }
 
+footer {
+    .container {
+        background-color: black;
+        color: white;
+
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        .formulario-inscricao {
+            text-align: center;
+            max-width: 300px; min-width: 300px; width: 300px;
+
+            h2 {
+                font-size: 1.3rem;
+            }
+            input#emailInscricao {
+                margin: 10px 0 20px 0;
+                border-color: white;
+                color: white;
+            }
+            input#enviarInscricao {
+                background-color: white;
+                color: black;
+            }
+        }
+        .contatos {
+            font-size: .9rem;
+
+            ul { list-style: none; }
+            p {
+                margin: 20px 0;
+                font-style: italic;
+            }
+            ul.list-two {
+                display: flex;
+                gap: 15px;
+
+                li {
+                    a {
+                        color: white;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -415,6 +466,15 @@ section.contato {
             .localizacao {
                 width: 100%; height: auto;
             }
+        }
+    }
+
+    footer {
+        .container {
+            flex-direction: row;
+            position: relative;
+
+            .contatos { width: 100%; }
         }
     }
 }
