@@ -424,6 +424,48 @@ footer .container .contatos ul.list-two li a {
   font-size: 1.3rem;
 }
 
+#redirect {
+  position: fixed;
+  bottom: -100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #3c4349;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  width: 400px;
+}
+
+#redirect .info-icon {
+  font-size: 50px;
+  height: 100%;
+}
+
+#redirect .info * {
+  font-size: .8rem;
+}
+
+#redirect .info p a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#redirect button#infoClose {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1080px;

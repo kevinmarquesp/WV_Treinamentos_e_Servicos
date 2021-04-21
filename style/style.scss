@@ -320,6 +320,46 @@ footer {
     }
 }
 
+#redirect {
+    position: fixed;
+    bottom: -100%;
+    padding: 1rem;
+
+    border-radius: 10px;
+    background-color: #3c4349;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    transition: 500ms;
+    width: 400px;
+
+    .info-icon {
+        font-size: 50px;
+        height: 100%;
+    }
+    .info {
+        * { font-size: .8rem; }
+        p {
+            a {
+                color: white;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+    button#infoClose {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+}
+
 
 
 @media screen and (min-width: 768px) {
