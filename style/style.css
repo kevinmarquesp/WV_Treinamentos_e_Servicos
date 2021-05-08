@@ -83,6 +83,7 @@ header .container nav {
   width: 256px;
   height: 100%;
   z-index: 100;
+  position: relative;
   position: fixed;
   right: -100%;
   top: 0;
@@ -91,23 +92,16 @@ header .container nav {
 }
 
 header .container nav #navbar-close {
-  height: 40px;
-  width: 100%;
-  padding-right: 10px;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 header .container nav ul {
   list-style: none;
+  margin-top: 3rem;
 }
 
 header .container nav ul li {
@@ -153,7 +147,7 @@ section.hero .container {
 
 section.hero .container h1 {
   color: white;
-  font-size: 1.3em;
+  font-size: 2.2em;
   text-transform: uppercase;
 }
 
@@ -219,6 +213,7 @@ section.portifolio .container .texto {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  max-width: 400px;
 }
 
 section.portifolio .container .texto p i {
@@ -503,6 +498,7 @@ footer .container .contatos ul.list-two li a {
     height: 25px;
   }
   header .container nav ul {
+    margin-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -536,7 +532,7 @@ footer .container .contatos ul.list-two li a {
     padding: 0 100px;
   }
   section.hero .container h1 {
-    font-size: 1.7em;
+    font-size: 2em;
   }
   section.servicos .container::after {
     content: "Serviços";
